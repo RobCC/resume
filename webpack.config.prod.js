@@ -21,7 +21,10 @@ module.exports = merge(baseConfig, {
             ],
             plugins: [
               "transform-object-rest-spread",
-              "transform-class-properties"
+              "transform-class-properties",
+              ["module-resolver", {
+                "root" : ['./src'],
+              }],
             ],
           },
         }
