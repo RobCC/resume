@@ -1,4 +1,18 @@
-.Button_button_22pc0 {
-  background-color: #cd00cd;
+.LeftPanel_leftSide_128T2 {
+  box-sizing: border-box;
+  position: fixed;
+  overflow: hidden;
+  background-color: #292929;
+  padding: 0 80px;
+  height: 100%;
+  width: 30%;
   color: white; }
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url(29b00ebcf93fda46ac9957fa4816eafd.ttf); }
+
+body {
+  font-family: 'Inconsolata', sans-serif;
+  margin: 0; }
 

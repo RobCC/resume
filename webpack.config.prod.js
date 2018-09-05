@@ -49,6 +49,10 @@ module.exports = merge(baseConfig, {
           }
         ]
       },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg)$/,
+        use: ['file-loader'],
+      },
     ]
   },
 });
