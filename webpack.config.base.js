@@ -1,6 +1,8 @@
-const path       = require('path');
-const HTMLPlugin = require('html-webpack-plugin');
+const path        = require('path');
+const webpack     = require('webpack');
+const HTMLPlugin  = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry   : {
@@ -11,6 +13,7 @@ module.exports = {
     filename      : 'main.js',
   },
   plugins : [
+    new CleanWebpackPlugin(['dist/*.*'], {}),
     new HTMLPlugin({
         template    : './src/index.html',
         filename    : './index.html',
