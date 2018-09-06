@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LeftPanel from 'Components/LeftPanel';
+import InfoPanel from 'Components/InfoPanel';
 import './Components/App.scss'
 
 const root = document.getElementById('root');
 
 ReactDOM.render(
-  <LeftPanel>Hello World</LeftPanel>
+  <InfoPanel>
+    Hello World
+  </InfoPanel>
 , root)

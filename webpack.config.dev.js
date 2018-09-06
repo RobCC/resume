@@ -1,13 +1,14 @@
 const path        = require('path');
 const merge     	= require('webpack-merge');
 const baseConfig  = require('./webpack.config.base.js');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = merge(baseConfig, {
   watch   : true,
+  cache   : false,
   devServer : {
     stats : 'errors-only',
     overlay : true,
-    open  : true,
   },
   module : {
     rules     : [
@@ -37,7 +38,7 @@ module.exports = merge(baseConfig, {
         test    : /\.scss$/,
         use     : [
           {
-            loader    : 'style-loader',
+            loader    : MiniCssExtractPlugin.loader,
           },
           {
             loader    : 'css-loader',
@@ -50,9 +51,6 @@ module.exports = merge(baseConfig, {
           },
           {
             loader    : 'sass-loader',
-            options   : {
-              sourceMap : true,
-            },
           }
         ]
       },
