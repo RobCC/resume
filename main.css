@@ -1,3 +1,35 @@
+.InfoSection_infoSection_1K360 {
+  display: block;
+  margin: 10px 0; }
+  .InfoSection_infoSection_1K360 .InfoSection_titleWrap_2mCjp {
+    display: block;
+    position: relative; }
+    .InfoSection_infoSection_1K360 .InfoSection_titleWrap_2mCjp .InfoSection_title_1kOip {
+      display: inline-block;
+      padding-left: 40px;
+      padding-right: 20px;
+      font-size: 1.4em;
+      background-color: #292929;
+      height: 35px;
+      line-height: 35px; }
+    .InfoSection_infoSection_1K360 .InfoSection_titleWrap_2mCjp .InfoSection_icon_1RSZy {
+      position: absolute;
+      left: 8px;
+      font-size: 1.5em;
+      height: 35px; }
+    .InfoSection_infoSection_1K360 .InfoSection_titleWrap_2mCjp:before {
+      content: '';
+      width: 100%;
+      border-bottom: 1px solid white;
+      display: block;
+      position: absolute;
+      right: -40px;
+      top: 50%;
+      z-index: -1; }
+  .InfoSection_infoSection_1K360 .InfoSection_content_3CEF- {
+    padding-top: 15px;
+    line-height: 25px; }
+
 .InfoPanel_infoSide_1kexq {
   position: fixed;
   overflow: hidden;
@@ -12,21 +44,42 @@
   .InfoPanel_infoSide_1kexq .InfoPanel_top_267wn {
     position: relative;
     width: 100%;
-    height: 30%;
+    height: 18%;
     background-color: black; }
-    .InfoPanel_infoSide_1kexq .InfoPanel_top_267wn img {
+    .InfoPanel_infoSide_1kexq .InfoPanel_top_267wn .InfoPanel_image_37wOw {
       position: absolute;
-      background-color: white;
-      width: 150px;
-      height: 150px;
+      background-color: #292929;
+      width: 250px;
+      height: 250px;
       left: 50%;
-      bottom: -75px;
-      margin-left: -75px; }
+      bottom: -125px;
+      margin-left: -125px;
+      border-radius: 100%; }
+      .InfoPanel_infoSide_1kexq .InfoPanel_top_267wn .InfoPanel_image_37wOw img {
+        max-width: 100%;
+        border-radius: 100%; }
   .InfoPanel_infoSide_1kexq .InfoPanel_info_34QmS {
     box-sizing: border-box;
     width: 100%;
-    height: 80%;
-    padding: 105px 80px; }
+    height: 82%;
+    padding-top: 155px;
+    padding-bottom: 155px;
+    padding-left: 50px;
+    padding-right: 40px; }
+
+.blurry-enter {
+  filter: blur(4px); }
+
+.blurry-enter-active {
+  transition: all 1000ms;
+  filter: blur(0px); }
+
+.blurry-exit {
+  filter: blur(0px); }
+
+.blurry-exit-active {
+  transition: all 1000ms;
+  filter: blur(4px); }
 
 @font-face {
   font-family: 'Inconsolata';
