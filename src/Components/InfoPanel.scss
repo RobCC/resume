@@ -1,5 +1,6 @@
 $bg-color : #292929;
-$img-size : 150px;
+$img-size : 250px;
+$top-height : 18%;
 
 .infoSide {
   position   : fixed;
@@ -16,25 +17,37 @@ $img-size : 150px;
   .top {
     position: relative;
     width : 100%;
-    height : 30%;
+    height : $top-height;
     background-color: black;
-    // background: linear-gradient(#434343, #292929)
+    // background: linear-gradient(#434343, #292929);
 
-    img {
+    .image {
       position: absolute;
-      background-color: white;
+      background-color: $bg-color;
       width: $img-size;
       height: $img-size;
       left: 50%;
       bottom: -($img-size / 2);
       margin-left: -($img-size / 2);
-    };
+      border-radius: 100%;
+
+      img {
+        max-width:100%;
+        border-radius: 100%;
+        transition: filter 1000ms;
+        filter: blur(0px);
+
+        &.blurry {
+          filter: blur(4px);
+        }
+      }
+    }
   }
 
   .info {
     box-sizing : border-box;
     width      : 100%;
-    height     : 80%;
+    height     : (100% - $top-height);
     padding    : ($img-size / 2 + 30) 80px;
   }
 

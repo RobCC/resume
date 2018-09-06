@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-transition-group": "^2.4.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
