@@ -3,7 +3,9 @@
   src:url('../assets/fonts/Inconsolata-Regular.ttf');
 }
 
-:global(body) {
-  font-family: 'Inconsolata', sans-serif;
-  margin: 0;
+:global {
+  body {
+    font-family: 'Inconsolata', sans-serif;
+    margin: 0;
+  }
 }

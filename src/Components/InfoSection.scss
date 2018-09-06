@@ -1,24 +1,52 @@
+$bg-color : #292929;
+
 .infoSection {
   display: block;
+  margin : 10px 0;
 
   .titleWrap {
     display: block;
     position : relative;
 
+    $title-height:  35px;
+
     .title {
+      display: inline-block;
       padding-left: 40px;
+      padding-right: 20px;
       font-size: 1.4em;
+      background-color: $bg-color;
+      height: $title-height;
+      line-height: $title-height;
+      // border: 1px solid white;
     }
 
     .icon {
       position: absolute;
-      left: 0;
-      top: -6px;
-      font-size: 1.8em;
+      left: 8px;
+      font-size: 1.5em;
+      height: $title-height;
+    }
+
+    $padding-right: 40px;
+
+    &:before {
+      content : '';
+      width: 100%;
+      border-bottom: 1px solid white;
+      display: block;
+      position: absolute;
+      right: -$padding-right;
+      top: 50%;
+      z-index: -1;
     }
   }
 
   .content {
     padding-top: 15px;
+    line-height: 25px;
   }
+}
+
+:global {
 }

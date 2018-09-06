@@ -23,7 +23,9 @@ class InfoPanel extends Component {
         </div>
         <div className={`${styles.info}`}>
           <InfoSection title="About Me" icon="user">
-            Hi, my name is Roberto.
+            Hi, my name is Roberto Chávez. I am a web developer with skills on front-end.
+            I love creating well written, quality web apps on both my work and my free time. I enjoy a challenge and moving forward
+            learning new technologies in this ever changing environment.
           </InfoSection>
         </div>
       </section>
