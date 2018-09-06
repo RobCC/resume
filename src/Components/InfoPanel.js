@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { CSSTransition } from 'react-transition-group'
+import { CSSTransition } from 'react-transition-group';
+import InfoSection from 'Components/InfoSection';
 import styles from './InfoPanel.scss';
 import image from '../assets/img/me.jpg';
 
@@ -21,7 +22,9 @@ class InfoPanel extends Component {
           </div>
         </div>
         <div className={`${styles.info}`}>
-          Hello World
+          <InfoSection title="About Me" icon="user">
+            Hi, my name is Roberto.
+          </InfoSection>
         </div>
       </section>
     )

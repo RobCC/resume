@@ -34,24 +34,6 @@ $top-height : 18%;
       img {
         max-width:100%;
         border-radius: 100%;
-
-        .blurryEnter {
-          filter: blur(4px);
-        }
-
-        .blurryEnterActive {
-          transition: filter 1000ms;
-          filter: blur(0px);
-        }
-
-        .blurryExit {
-          filter: blur(0px);
-        }
-
-        .blurryExitActive {
-          transition: filter 1000ms;
-          filter: blur(4px);
-        }
       }
     }
   }
