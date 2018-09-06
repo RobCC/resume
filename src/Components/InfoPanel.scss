@@ -34,10 +34,22 @@ $top-height : 18%;
       img {
         max-width:100%;
         border-radius: 100%;
-        transition: filter 1000ms;
-        filter: blur(0px);
 
-        &.blurry {
+        .blurryEnter {
+          filter: blur(4px);
+        }
+
+        .blurryEnterActive {
+          transition: filter 1000ms;
+          filter: blur(0px);
+        }
+
+        .blurryExit {
+          filter: blur(0px);
+        }
+
+        .blurryExitActive {
+          transition: filter 1000ms;
           filter: blur(4px);
         }
       }
@@ -50,7 +62,24 @@ $top-height : 18%;
     height     : (100% - $top-height);
     padding    : ($img-size / 2 + 30) 80px;
   }
+}
 
+:global {
+  .blurry-enter {
+    filter: blur(4px);
+  }
 
+  .blurry-enter-active {
+    transition: all 1000ms;
+    filter: blur(0px);
+  }
 
+  .blurry-exit {
+    filter: blur(0px);
+  }
+
+  .blurry-exit-active {
+    transition: all 1000ms;
+    filter: blur(4px);
+  }
 }

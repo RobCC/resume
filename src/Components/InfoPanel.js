@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
-import { Transition, CSSTransition } from 'react-transition-group'
+import { CSSTransition } from 'react-transition-group'
 import styles from './InfoPanel.scss';
 import image from '../assets/img/me.jpg';
 
 class InfoPanel extends Component {
   state = {
-    isImgBlurry : true
+    isImgClear : false
   }
 
   render() {
-    const {isImgBlurry} = this.state;
+    const {isImgClear} = this.state;
 
     return (
       <section className={`${styles.infoSide}`}>
         <div className={`${styles.top}`}>
           <div className={`${styles.image}`}>
-            <img src={image} className={isImgBlurry ? styles.blurry : ''}></img>
+            <CSSTransition in={isImgClear} timeout={1000} classNames="blurry">
+              <img src={image}></img>
+            </CSSTransition>
           </div>
         </div>
         <div className={`${styles.info}`}>
@@ -27,7 +29,7 @@ class InfoPanel extends Component {
 
   componentDidMount() {
     this.setState({
-      isImgBlurry : false
+      isImgClear : true
     });
   }
 }
