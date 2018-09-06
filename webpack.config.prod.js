@@ -4,7 +4,6 @@ const baseConfig  = require('./webpack.config.base.js');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = merge(baseConfig, {
-
   module : {
     rules     : [
       {
@@ -38,10 +37,10 @@ module.exports = merge(baseConfig, {
           {
             loader    : 'css-loader',
             options   : {
+              minimize        : true,
               modules         : true,
               importLoaders   : 1,
               localIdentName  : '[name]_[local]_[hash:base64:5]',
-              minimize        : true,
             }
           },
           {
