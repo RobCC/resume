@@ -1,12 +1,12 @@
-$bg-color : #292929;
-$img-size : 250px;
-$top-height : 18%;
+@import './Variables.scss';
+
+$top-section-height : 15%;
 
 .infoSide {
   position   : fixed;
   overflow   : hidden;
   display    : flex;
-  background-color: $bg-color;
+  background-color: $left-info-bg;
   float      : left;
   height     : 100%;
   width      : 30%;
@@ -17,25 +17,11 @@ $top-height : 18%;
   .top {
     position: relative;
     width : 100%;
-    height : $top-height;
-    background-color: black;
+    height : $top-section-height;
+    background-color: #161616;
     // background: linear-gradient(#434343, #292929);
 
-    .image {
-      position: absolute;
-      background-color: $bg-color;
-      width: $img-size;
-      height: $img-size;
-      left: 50%;
-      bottom: -($img-size / 2);
-      margin-left: -($img-size / 2);
-      border-radius: 100%;
 
-      img {
-        max-width:100%;
-        border-radius: 100%;
-      }
-    }
   }
 
   $padding-right: 40px;
@@ -43,30 +29,10 @@ $top-height : 18%;
   .info {
     box-sizing : border-box;
     width      : 100%;
-    height     : (100% - $top-height);
-    padding-top: ($img-size / 2 + 30);
-    padding-bottom: ($img-size / 2 + 30);
+    height     : (100% - $top-section-height);
+    padding-top: ($left-img-size / 2);
+    padding-bottom: ($left-img-size / 2);
     padding-left: 50px;
     padding-right: $padding-right;
-  }
-}
-
-:global {
-  .blurry-enter {
-    filter: blur(4px);
-  }
-
-  .blurry-enter-active {
-    transition: all 1000ms;
-    filter: blur(0px);
-  }
-
-  .blurry-exit {
-    filter: blur(0px);
-  }
-
-  .blurry-exit-active {
-    transition: all 1000ms;
-    filter: blur(4px);
   }
 }

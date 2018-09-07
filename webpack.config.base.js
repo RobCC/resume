@@ -3,6 +3,7 @@ const webpack     = require('webpack');
 const HTMLPlugin  = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = !isProd;
@@ -15,7 +16,10 @@ const plugins = [
   new MiniCssExtractPlugin({
     filename      : '[name].css',
     chunkFilename : '[id].css',
-  })
+  }),
+  new CopyWebpackPlugin([
+    { from: 'src/assets/img/favicon.png' },
+  ])
 ]
 
 if (isProd) {

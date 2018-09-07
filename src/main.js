@@ -4,15 +4,11 @@ import InfoPanel from 'Components/InfoPanel';
 import './Components/App.scss';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faIdCard } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faUser);
+library.add(faUser, faIdCard);
 
 
 const root = document.getElementById('root');
 
-ReactDOM.render(
-  <InfoPanel>
-    Hello World
-  </InfoPanel>
-, root)
+ReactDOM.render(<InfoPanel>Hello World</InfoPanel>, root)

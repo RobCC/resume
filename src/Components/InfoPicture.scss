@@ -1,0 +1,39 @@
+@import './Variables.scss';
+
+.image {
+  position: absolute;
+  background-color: $left-info-bg;
+  width: $left-img-size;
+  height: $left-img-size;
+  left: 50%;
+  bottom: -($left-img-size / 2);
+  margin-left: -($left-img-size / 2);
+  border-radius: 100%;
+
+  img {
+    max-width:100%;
+    border-radius: 100%;
+  }
+}
+
+:global {
+  $blur-time : 1250ms;
+
+  .blurry-enter {
+    filter: blur(4px);
+  }
+
+  .blurry-enter-active {
+    transition: all $blur-time;
+    filter: blur(0px);
+  }
+
+  .blurry-exit {
+    filter: blur(0px);
+  }
+
+  .blurry-exit-active {
+    transition: all $blur-time;
+    filter: blur(4px);
+  }
+}
