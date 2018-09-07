@@ -22,6 +22,24 @@
     padding-bottom: 100px;
     padding-left: 50px;
     padding-right: 40px; }
+  .InfoPanel_infoSide_1kexq footer {
+    opacity: 0;
+    padding: 5px;
+    font-size: 0.8em;
+    background-color: #292929;
+    transition: opacity 250ms; }
+    .InfoPanel_infoSide_1kexq footer:hover {
+      opacity: 1; }
+    .InfoPanel_infoSide_1kexq footer .InfoPanel_react_Gx21L {
+      margin-left: 5px;
+      animation-name: InfoPanel_rotate_1zM9S;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+
+@keyframes InfoPanel_rotate_1zM9S {
+  100% {
+    transform: rotate(360deg); } }
 
 .InfoPicture_image_1c-gB {
   position: absolute;
@@ -116,6 +134,13 @@
     transition: all 800ms;
     opacity: 0;
     bottom: 5px; }
+
+.ContactLine_contactLine_3JAWP {
+  margin: 10px 15px; }
+  .ContactLine_contactLine_3JAWP .ContactLine_icon_1tHm8 {
+    font-size: 1.3em; }
+  .ContactLine_contactLine_3JAWP .ContactLine_info_NQwTH {
+    margin-left: 15px; }
 
 @font-face {
   font-family: 'Inconsolata';
