@@ -2,13 +2,25 @@
 
 .image {
   position: absolute;
-  background-color: $left-info-bg;
-  width: $left-img-size;
-  height: $left-img-size;
+
   left: 50%;
-  bottom: -($left-img-size / 2);
-  margin-left: -($left-img-size / 2);
   border-radius: 100%;
+
+  @media #{$media-mobile} {
+    background-color: transparent;
+    width: $left-img-size-mb;
+    height: $left-img-size-mb;
+    bottom: -($left-img-size-mb / 2);
+    margin-left: -($left-img-size-mb / 2);
+  }
+
+  @media #{$media-not-mobile} {
+    background-color: $left-info-bg;
+    width: $left-img-size;
+    height: $left-img-size;
+    bottom: -($left-img-size / 2);
+    margin-left: -($left-img-size / 2);
+  }
 
   img {
     max-width:100%;

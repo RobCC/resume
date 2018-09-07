@@ -10,6 +10,8 @@ import InfoPicture from 'Components/InfoPicture';
 import InfoSection from 'Components/InfoSection';
 import ContactLine from 'Components/ContactLine';
 
+const phone = '+52 1 33 3952 3772';
+
 class InfoPanel extends Component {
   state = {
     isFooterHidden : true
@@ -32,7 +34,9 @@ class InfoPanel extends Component {
           <InfoSection title="Contact" icon="id-card">
             You can contact me through the following:
             <ContactLine icon={faEnvelope}>rrc0138@gmail.com</ContactLine>
-            <ContactLine icon={faPhone}>+52 1 33 3952 3772</ContactLine>
+            <ContactLine icon={faPhone}>
+              {phone}
+            </ContactLine>
           </InfoSection>
         </div>
          <footer>

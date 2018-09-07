@@ -1,9 +1,18 @@
-$left-info-bg : #292929;
+@import './Variables.scss';
 
 .infoSection {
   display: block;
   margin : 5% 0;
-  min-height: 200px;
+
+  @media #{$media-mobile} {
+    margin : 15px 0;
+    min-height: 150px;
+  }
+
+  @media #{$media-not-mobile} {
+    margin : 25px 0;
+    min-height: 200px;
+  }
 
 
   $title-height:  35px;
