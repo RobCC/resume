@@ -35,4 +35,30 @@ $top-section-height : 15%;
     padding-left: 50px;
     padding-right: $padding-right;
   }
+
+  footer {
+    opacity: 0;
+    padding: 5px;
+    font-size: 0.8em;
+    background-color: $left-info-bg;
+    transition: opacity 250ms;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .react {
+      margin-left: 5px;
+      animation-name:rotate;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
 }
+
+@keyframes rotate{
+    100%{
+      transform:rotate(360deg);
+    }
+  }
