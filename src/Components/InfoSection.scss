@@ -63,12 +63,12 @@
 
 :global {
   $line-time : 500ms;
-  $line-pos : 25px;
+  $line-pos : 50px;
   $content-pos : 5px;
   $content-time : 800ms;
 
   .line-enter {
-    opacity: 0;
+    opacity: 1;
     left : $line-pos;
 
     &.line-enter-active {

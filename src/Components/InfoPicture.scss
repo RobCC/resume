@@ -29,7 +29,7 @@
 }
 
 :global {
-  $blur-time : 1250ms;
+  $blur-time : 1500ms;
 
   .blurry-enter {
     filter: blur(4px);

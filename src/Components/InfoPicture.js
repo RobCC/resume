@@ -12,7 +12,7 @@ class InfoPicture extends Component {
 
     return (
       <div className={css.image}>
-        <CSSTransition in={isImgClear} timeout={1200} classNames="blurry">
+        <CSSTransition in={isImgClear} timeout={1500} classNames="blurry">
           <img src={this.props.img}></img>
         </CSSTransition>
       </div>
