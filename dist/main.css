@@ -98,14 +98,14 @@
   filter: blur(4px); }
 
 .blurry-enter-active {
-  transition: all 1250ms;
+  transition: all 1500ms;
   filter: blur(0px); }
 
 .blurry-exit {
   filter: blur(0px); }
 
 .blurry-exit-active {
-  transition: all 1250ms;
+  transition: all 1500ms;
   filter: blur(4px); }
 
 .InfoSection_infoSection_1K360 {
@@ -151,8 +151,8 @@
     line-height: 25px; }
 
 .line-enter {
-  opacity: 0;
-  left: 25px; }
+  opacity: 1;
+  left: 50px; }
   .line-enter.line-enter-active {
     transition: all 500ms;
     opacity: 1;
@@ -160,11 +160,11 @@
 
 .line-exit {
   opacity: 0;
-  left: 25px; }
+  left: 50px; }
   .line-exit.line-exit-active {
     transition: all 500ms;
     opacity: 0;
-    left: 25px; }
+    left: 50px; }
 
 .content-enter {
   opacity: 0;
@@ -184,10 +184,40 @@
 
 .ContactLine_contactLine_3JAWP {
   margin: 10px 15px; }
+  .ContactLine_contactLine_3JAWP.ContactLine_inline_3Za4D {
+    display: inline-block;
+    margin: 10px; }
+    .ContactLine_contactLine_3JAWP.ContactLine_inline_3Za4D .ContactLine_icon_1tHm8 {
+      font-size: 2em; }
+    .ContactLine_contactLine_3JAWP.ContactLine_inline_3Za4D a {
+      color: white; }
   .ContactLine_contactLine_3JAWP .ContactLine_icon_1tHm8 {
     font-size: 1.3em; }
   .ContactLine_contactLine_3JAWP .ContactLine_info_NQwTH {
     margin-left: 15px; }
+  .ContactLine_contactLine_3JAWP a {
+    color: #1ad1ff; }
+  .ContactLine_contactLine_3JAWP svg {
+    transition: background-color 250ms, color 250ms; }
+    .ContactLine_contactLine_3JAWP svg[data-icon="linkedin"] {
+      width: 32px;
+      height: 32px;
+      border-radius: 3px; }
+      .ContactLine_contactLine_3JAWP svg[data-icon="linkedin"]:hover {
+        background: white;
+        color: #0077b5; }
+    .ContactLine_contactLine_3JAWP svg[data-icon="github"] {
+      padding: 1px;
+      border-radius: 50%; }
+      .ContactLine_contactLine_3JAWP svg[data-icon="github"]:hover {
+        background: white;
+        color: #333; }
+    .ContactLine_contactLine_3JAWP svg[data-icon="codepen"] {
+      padding: 1px;
+      border-radius: 20%; }
+      .ContactLine_contactLine_3JAWP svg[data-icon="codepen"]:hover {
+        background: white;
+        color: #333; }
 
 @font-face {
   font-family: 'Inconsolata';
