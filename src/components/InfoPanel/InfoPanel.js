@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faReact, faLinkedin, faGithub, faCodepen } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faCodepen } from '@fortawesome/free-brands-svg-icons';
 
 import Picture from 'components/Picture/Picture';
 import InfoSection from 'components/InfoSection/InfoSection';
@@ -16,12 +16,10 @@ const EMAIL = 'rrc0138@gmail.com';
 const InfoPanel = () => {
   return (
     <section className={css.infoSide}>
-      <div className={css.top}>
-        <Picture image={image} />
-      </div>
+      <Picture image={image} />
       <div className={css.info}>
         <InfoSection title="About Me" icon="user">
-          Hi, my name is Roberto Chávez. I am a web developer with skills on front-end.
+          Hi, my name is Roberto Chávez, I am a web developer!
           I love creating well written, quality web apps on both my work and my free time.
           I enjoy a challenge and moving forward learning new technologies in this
           ever changing environment.
@@ -44,10 +42,6 @@ const InfoPanel = () => {
           </div>
         </InfoSection>
       </div>
-       <footer>
-        Powered by React
-        <FontAwesomeIcon icon={faReact} className={css.react} />
-      </footer>
     </section>
   );
 };

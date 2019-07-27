@@ -21,7 +21,9 @@ const InfoSection = ({ icon, title, children }) => {
         onEntered={() => setContent(true)}
       >
         <div className={styles.titleWrap}>
-          <span className={styles.title}>{title}</span>
+          <span className={styles.title}>
+            <span className={styles.titleText}>{title}</span>
+          </span>
           <FontAwesomeIcon icon={icon} className={styles.icon} />
         </div>
       </CSSTransition>

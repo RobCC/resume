@@ -27,7 +27,6 @@
   }
 
   svg {
-
     transition: background-color 250ms, color 250ms;
 
     &[data-icon="linkedin"] {
@@ -38,7 +37,7 @@
       &:hover{
         background: white;
         color: #0077b5;
-        }
+      }
     }
 
     &[data-icon="github"] {
@@ -48,7 +47,7 @@
       &:hover {
         background: white;
         color: #333;
-        }
+      }
     }
 
     &[data-icon="codepen"] {
@@ -58,7 +57,7 @@
       &:hover {
         background: white;
         color: #333;
-        }
+      }
     }
   }
 }
