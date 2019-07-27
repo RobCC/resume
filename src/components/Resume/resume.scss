@@ -1,15 +1,9 @@
 .resume {
-  .side {
+  .rightSide {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .right {
     position: relative;
     left: 30%;
     width: 70%;
+    padding: 20px;
   }
 }

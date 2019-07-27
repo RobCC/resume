@@ -52,53 +52,25 @@ $padding-right: 40px;
 }
 
 :global {
-  $line-time : 500ms;
-  $line-pos : 40px;
-  $content-pos : 4px;
-  $content-time : 800ms;
-
   .line-enter {
     opacity: 1;
-    left : $line-pos;
+    left : 40px;
 
     &.line-enter-active {
-      transition: all $line-time;
+      transition: all 400ms;
       opacity: 1;
       left: 0;
     }
   }
 
-  .line-exit {
-    opacity: 0;
-    left : $line-pos;
-
-    &.line-exit-active {
-      transition: all $line-time;
-      opacity: 0;
-      left : $line-pos;
-    }
-  }
-
-
   .content-enter {
     opacity: 0;
-    bottom : $content-pos;
+    bottom : 4px;
 
     &.content-enter-active {
-      transition: all $content-time;
+      transition: all 500ms;
       opacity: 1;
       bottom: 0;
-    }
-  }
-
-  .content-exit {
-    opacity: 0;
-    bottom : $content-pos;
-
-    &.content-exit-active {
-      transition: all $content-time;
-      opacity: 0;
-      bottom : $content-pos;
     }
   }
 }
