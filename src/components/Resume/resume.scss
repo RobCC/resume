@@ -1,0 +1,15 @@
+.resume {
+  .side {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right {
+    position: relative;
+    left: 30%;
+    width: 70%;
+  }
+}

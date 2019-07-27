@@ -13,10 +13,13 @@ import image from '../../assets/img/me.jpg';
 const PHONE_NUMBER = '+52 1 33 3952 3772';
 const EMAIL = 'rrc0138@gmail.com';
 
+const getGmailSendUrl = email => `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${email}&tf=1`;
+
 const InfoPanel = () => {
   return (
     <section className={css.infoSide}>
       <Picture image={image} />
+
       <div className={css.info}>
         <InfoSection title="About Me" icon="user">
           Hi, my name is Roberto Chávez, I am a web developer!
@@ -27,12 +30,12 @@ const InfoPanel = () => {
 
         <InfoSection title="Contact" icon="id-card">
           You can contact me through the following:
+
           <Contact icon={faEnvelope}>
-            <a href={`https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${EMAIL}&tf=1`}>{EMAIL}</a>
+            <a href={getGmailSendUrl(EMAIL)}>{EMAIL}</a>
           </Contact>
-          <Contact icon={faPhone}>
-            {PHONE_NUMBER}
-          </Contact>
+
+          <Contact icon={faPhone}>{PHONE_NUMBER}</Contact>
 
           I'm also on the following sites:
           <div>

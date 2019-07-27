@@ -4,16 +4,13 @@ $top-section-height: 15%;
 $top-section-height-mb: 5%;
 
 .infoSide {
-  position: fixed;
-  color: white;
   background: linear-gradient( 330deg, #1d354c 0%, #281e2d 90% );
-
   position: fixed;
   overflow: hidden;
-  float: left;
+  color: white;
+
   width: 30%;
   min-height: 100vh;
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
