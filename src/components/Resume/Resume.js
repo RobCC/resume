@@ -15,7 +15,7 @@ const Resume = () => {
     <div className={styles.resume}>
       <InfoSide />
 
-      <div className={styles.rightSide}>
+      <section className={styles.rightSide}>
         <ContentSection title="Careers" icon={faLaptopCode}>
           <div className={row}>
             <div className={column}>
@@ -110,7 +110,7 @@ const Resume = () => {
             </li>
           </ul>
         </ContentSection>
-      </div>
+      </section>
     </div>
   );
 };

@@ -2,9 +2,22 @@
 
 .image {
   background-color: transparent;
-  width: $left-img-size;
-  height: $left-img-size;
+  width: $img-size-desktop;
+  height: $img-size-desktop;
   margin-top: 50px;
+
+  @media #{$media-desktop} {
+    width: $img-size-desktop;
+    height: $img-size-desktop;
+  }
+
+  @media #{$media-mobile} {
+    width: $img-size-mobile;
+    height: $img-size-mobile;
+    margin-left: 60px;
+  }
+
+
 
   img {
     max-width: 100%;

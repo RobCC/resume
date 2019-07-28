@@ -38,7 +38,7 @@ const InfoSide = () => {
           <Contact icon={faPhone}>{PHONE_NUMBER}</Contact>
 
           I'm also on the following sites:
-          <div>
+          <div className={styles.medias}>
             <a className={styles.mediaIcon} href="https://www.linkedin.com/in/jrobcc/">
               <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
             </a>
