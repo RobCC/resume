@@ -1,0 +1,20 @@
+.career {
+  margin: 10px 0;
+  font-size: .9em;
+
+  .company {
+    display: inline-block;
+    font-size: 1.6em;
+  }
+
+  .period {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 0.755em;
+    color: #4c4c4c;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+}

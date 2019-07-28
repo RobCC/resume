@@ -1,0 +1,33 @@
+.skill {
+  width: fit-content;
+  padding: 4px;
+  border-radius: 5px;
+  transition: background 200ms;
+  cursor: default;
+
+  &:hover {
+    background: #e2e2e2;
+  }
+
+  .name {
+    font-size: 1.35em;
+  }
+
+  .value {
+    position: relative;
+    margin-left: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 10px;
+    top: -1px;
+
+    &.strong {
+      background: #82C341;
+    }
+
+    &.knowledge {
+      background: #5eb4f3;
+    }
+  }
+}
