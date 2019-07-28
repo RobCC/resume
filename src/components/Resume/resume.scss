@@ -1,8 +1,20 @@
+@import '../variables.scss';
+
 .resume {
+  display: flex;
+
+  @media #{$media-desktop} {
+    flex-direction: row;
+  }
+
+  @media #{$media-mobile} {
+    flex-direction: column;
+  }
+
   .rightSide {
     min-height: 100vh;
     position: relative;
-    left: 30%;
+    // left: 30%;
     width: 70%;
     padding: 20px;
   }

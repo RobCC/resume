@@ -11,8 +11,8 @@ const Resume = () => {
       <InfoSide />
 
       <div className={styles.rightSide}>
-        <ContentSection title="Education">
-          Stuff
+        <ContentSection title="Careers">
+
         </ContentSection>
       </div>
     </div>
