@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUser, faIdCard } from '@fortawesome/free-solid-svg-icons';
 
-import InfoPanel from 'components/InfoPanel/InfoPanel';
+import InfoSide from 'components/InfoSide/InfoSide';
 import Resume from 'components/Resume/Resume';
 
 import './components/app.scss';

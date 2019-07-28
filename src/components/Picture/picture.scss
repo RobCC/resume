@@ -1,8 +1,6 @@
 @import '../variables.scss';
 
 .image {
-  border-radius: 100%;
-
   background-color: transparent;
   width: $left-img-size;
   height: $left-img-size;
@@ -10,7 +8,7 @@
 
   img {
     max-width: 100%;
-    border-radius: 100%;
+    border-radius: 50%;
   }
 }
 

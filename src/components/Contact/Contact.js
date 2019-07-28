@@ -7,10 +7,7 @@ import styles from './contact.scss';
 const Contact = ({ icon = '', justIcon = false, href, children }) => {
   return (
     <div className={`${styles.contact} ${justIcon ? styles.inline : ''}`}>
-      {justIcon
-        ? <a href={href}> <FontAwesomeIcon icon={icon} className={styles.icon} /> </a>
-        : <FontAwesomeIcon icon={icon} className={styles.icon} />
-      }
+      <FontAwesomeIcon icon={icon} className={styles.icon} />
       <span className={styles.info}>{children}</span>
     </div>
   );

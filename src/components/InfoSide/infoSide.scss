@@ -1,0 +1,72 @@
+@import '../variables.scss';
+
+$top-section-height: 15%;
+$top-section-height-mb: 5%;
+
+.infoSide {
+  background: linear-gradient(330deg, #1d354c 0%, #281e2d 90%);
+  // background: linear-gradient(330deg, #25384a 0%, #392a40 90%);
+
+  position: fixed;
+  overflow: hidden;
+  color: white;
+
+  width: 30%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .info {
+    box-sizing: border-box;
+    width: 100%;
+
+    padding: 0 50px;
+    margin-top: ($left-img-size / 2);
+    margin-bottom: ($left-img-size / 2);
+    height: (100% - $top-section-height);
+  }
+
+  .mediaIcon {
+    display: inline-block;
+    margin: 10px 10px 0 10px;
+    color: white;
+    font-size: 2em;
+  }
+
+  svg {
+    transition: background-color 250ms, color 250ms;
+
+    &[data-icon="linkedin"] {
+      width: 32px;
+      height: 32px;
+      border-radius: 3px;
+
+      &:hover{
+        background: white;
+        color: #0077b5;
+      }
+    }
+
+    &[data-icon="github"] {
+      padding: 1px;
+      border-radius: 50%;
+
+      &:hover {
+        background: white;
+        color: #333;
+      }
+    }
+
+    &[data-icon="codepen"] {
+      padding: 1px;
+      border-radius: 20%;
+
+      &:hover {
+        background: white;
+        color: #333;
+      }
+    }
+  }
+}

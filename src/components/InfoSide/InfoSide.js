@@ -7,7 +7,7 @@ import Picture from 'components/Picture/Picture';
 import InfoSection from 'components/InfoSection/InfoSection';
 import Contact from 'components/Contact/Contact';
 
-import css from './infoPanel.scss';
+import styles from './InfoSide.scss';
 import image from '../../assets/img/me.jpg';
 
 const PHONE_NUMBER = '+52 1 33 3952 3772';
@@ -15,12 +15,12 @@ const EMAIL = 'rrc0138@gmail.com';
 
 const getGmailSendUrl = email => `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${email}&tf=1`;
 
-const InfoPanel = () => {
+const InfoSide = () => {
   return (
-    <section className={css.infoSide}>
+    <section className={styles.infoSide}>
       <Picture image={image} />
 
-      <div className={css.info}>
+      <div className={styles.info}>
         <InfoSection title="About Me" icon="user">
           Hi, my name is Roberto Chávez, I am a web developer!
           I love creating well written, quality web apps on both my work and my free time.
@@ -39,9 +39,15 @@ const InfoPanel = () => {
 
           I'm also on the following sites:
           <div>
-            <Contact icon={faLinkedin} justIcon={true} href="https://www.linkedin.com/in/jrobcc/" />
-            <Contact icon={faGithub} justIcon={true} href="https://github.com/RobCC" />
-            <Contact icon={faCodepen} justIcon={true} href="https://codepen.io/robcc/" />
+            <a className={styles.mediaIcon} href="https://www.linkedin.com/in/jrobcc/">
+              <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
+            </a>
+            <a className={styles.mediaIcon} href="https://github.com/RobCC">
+              <FontAwesomeIcon icon={faGithub} className={styles.icon} />
+            </a>
+            <a className={styles.mediaIcon} href="https://codepen.io/robcc/">
+              <FontAwesomeIcon icon={faCodepen} className={styles.icon} />
+            </a>
           </div>
         </InfoSection>
       </div>
@@ -49,4 +55,4 @@ const InfoPanel = () => {
   );
 };
 
-export default InfoPanel;
+export default InfoSide;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import InfoPanel from 'components/InfoPanel/InfoPanel';
+import InfoSide from 'components/InfoSide/InfoSide';
 import ContentSection from 'components/ContentSection/ContentSection';
 
 import styles from './resume.scss';
@@ -8,7 +8,7 @@ import styles from './resume.scss';
 const Resume = () => {
   return (
     <div className={styles.resume}>
-      <InfoPanel />
+      <InfoSide />
 
       <div className={styles.rightSide}>
         <ContentSection title="Education">

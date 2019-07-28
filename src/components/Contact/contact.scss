@@ -1,63 +1,11 @@
 .contact {
   margin: 10px 15px;
 
-  &.inline {
-    display: inline-block;
-    margin: 10px;
-
-    .icon {
-      font-size: 2em;
-    }
-
-    a {
-      color: white;
-    }
-  }
-
-  .icon {
-    font-size: 1.3em;
-  }
-
   .info {
     margin-left: 15px;
   }
 
   a {
     color: #1ad1ff;
-  }
-
-  svg {
-    transition: background-color 250ms, color 250ms;
-
-    &[data-icon="linkedin"] {
-      width: 32px;
-      height: 32px;
-      border-radius: 3px;
-
-      &:hover{
-        background: white;
-        color: #0077b5;
-      }
-    }
-
-    &[data-icon="github"] {
-      padding: 1px;
-      border-radius: 50%;
-
-      &:hover {
-        background: white;
-        color: #333;
-      }
-    }
-
-    &[data-icon="codepen"] {
-      padding: 1px;
-      border-radius: 20%;
-
-      &:hover {
-        background: white;
-        color: #333;
-      }
-    }
   }
 }
