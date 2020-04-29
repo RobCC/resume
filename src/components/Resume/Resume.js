@@ -41,8 +41,8 @@ const Resume = () => {
           <div className={row}>
             <div className={column}>
               <Career company="Accedo" period="Octuber 2018 - currently" title="Web Engineer">
-                Working on multiple web & smart TV apps, focused on streaming, using technologies such as
-                Angular, React, or plan JS.
+                Working on multiple web & smart TV apps, focused on streaming, and using technologies such as
+                Angular, React, or plain JS.
               </Career>
             </div>
           </div>
